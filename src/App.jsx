@@ -7,8 +7,8 @@ function App() {
   const [input, setInput] = useState('');
   const [basketName, setBasketName] = useState('myBasket');
 
-  const pantryId = process.env.REACT_APP_PANTRY_ID;
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const pantryId = import.meta.env.VITE_PANTRY_ID;
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   const fetchData = async () => {
     try {
